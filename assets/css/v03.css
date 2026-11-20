@@ -202,6 +202,18 @@
 .apps-grid {
   display: grid;
   gap: 1.25rem;
+  margin-top: 1.75rem; /* 28px under the section H2 */
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-card > p:last-child {
+  margin-top: auto;
+  padding-top: 0.85rem;
 }
 
 @media (min-width: 50rem) {
