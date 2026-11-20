@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Line icon of a laboratory flask</title>
+  <g stroke="#4A2370" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    
+  <path d="M20 8.5h8"/>
+  <path d="M22 8.5v10L12.5 36.5A4 4 0 0 0 16 42h16a4 4 0 0 0 3.5-5.5L26 18.5v-10"/>
+  <path d="M15 32h18"/>
+  <circle cx="29" cy="12" r="1.2" fill="#4A2370" stroke="none"/>
+  <circle cx="32.5" cy="16.5" r="1.2" fill="#4A2370" stroke="none"/>
+
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Line icon of a shield with a check mark</title>
+  <g stroke="#4A2370" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    
+  <path d="M24 7.5l14 5v11.5c0 8-6.2 14.2-14 16.5-7.8-2.3-14-8.5-14-16.5V12.5l14-5z"/>
+  <path d="M17.5 24.5l4.2 4.2 8.3-8.7"/>
+
+  </g>
+</svg>

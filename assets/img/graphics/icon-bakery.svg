@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Line icon of a loaf of bread</title>
+  <g stroke="#4A2370" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 28c0-8 6-14 14-14s14 6 14 14v8H10v-8z"/>
+    <path d="M14 16c2.2-4.2 6-6.5 10-6.5 4.2 0 8 2.3 10 6.5"/>
+    <path d="M18 24v6M24 22.5v7M30 24v6"/>
+  </g>
+</svg>

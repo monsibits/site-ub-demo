@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Line icon of linked lot marks</title>
+  <g stroke="#4A2370" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    
+  <rect x="8.5" y="14" width="10" height="10" rx="2"/>
+  <rect x="29.5" y="24" width="10" height="10" rx="2"/>
+  <path d="M18.5 19h5.5a4 4 0 0 1 4 4v1"/>
+  <path d="M11 34.5h10M25 14.5h10"/>
+
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Line icon of a cup with a saucer</title>
+  <g stroke="#4A2370" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    
+  <path d="M14 14h16l-1.6 16.5c-.2 2-1.8 3.5-3.8 3.5h-5.2c-2 0-3.6-1.5-3.8-3.5L14 14z"/>
+  <path d="M30 18h3.5c2 0 3.5 1.6 3.5 3.6S35.5 25 33.5 25H29"/>
+  <path d="M16 38.5h16"/>
+  <path d="M20 8.5c0 2 .5 3.5 0 5M25 8c0 2.2.6 3.8 0 5.5"/>
+
+  </g>
+</svg>

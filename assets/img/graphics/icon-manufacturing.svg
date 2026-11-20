@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Line icon of stacked packs</title>
+  <g stroke="#4A2370" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 28h14v12H8z"/>
+    <path d="M22 20h14v20H22z"/>
+    <path d="M36 24h6v16h-6z"/>
+    <path d="M8 28h14M22 20h14M36 24h6"/>
+  </g>
+</svg>

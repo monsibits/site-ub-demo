@@ -1,0 +1,25 @@
+{
+  "name": "UBEPHORIA (internal demo)",
+  "short_name": "UBEPHORIA",
+  "description": "Internal demo. Philippine ube powder for European food manufacturers, bakeries and beverage makers.",
+  "icons": [
+    {
+      "src": "assets/img/favicon/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/favicon/apple-touch-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/favicon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "display": "browser",
+  "background_color": "#FBF6EC",
+  "theme_color": "#4A2370"
+}

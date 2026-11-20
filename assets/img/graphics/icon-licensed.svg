@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Line icon of a factory building</title>
+  <g stroke="#4A2370" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 40V22l10-6v6l10-6v24"/>
+    <path d="M28 40V20h12v20"/>
+    <path d="M8 40h32"/>
+    <path d="M14 28v4M19 28v4M33 26v4M33 33v3"/>
+  </g>
+</svg>

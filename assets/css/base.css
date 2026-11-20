@@ -1,0 +1,193 @@
+/* Colour, type and spacing tokens from the brand pack. Swap the logo
+   files or the --logo-* custom properties in one place to change the wordmark. */
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/fraunces-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../fonts/figtree-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-coconut-cream: #fbf6ec;
+  --color-lilac-mist: #eee6f7;
+  --color-ube-mochi: #d9c8f0;
+  --color-deep-ube: #4a2370;
+  --color-pandan-leaf: #6e9f5b;
+  --color-pandan-leaf-dark: #4e7a42;
+  --color-gold-foil: #c9a24b;
+  --color-light-gold: #eed084;
+  --color-blush: #f2b8c6;
+  --color-ink-muted: #706080;
+  --color-white-card: #fffdf8;
+  --color-button-hover: #5b2e87;
+
+  --font-display: "Fraunces", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  --font-body: "Figtree", "Nunito Sans", "Segoe UI", sans-serif; /* Nunito Sans and system sans only if Figtree does not load */
+
+  --text-h1: clamp(2rem, 1.25rem + 3vw, 3.5rem);
+  --text-h2: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  --text-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --text-body: 1.125rem;
+  --text-small: 0.875rem;
+  --text-eyebrow: 0.8125rem;
+  --eyebrow-tracking: 0.12em;
+
+  --space: 0.5rem;
+  --space-section: clamp(4rem, 3rem + 4vw, 8rem);
+  --measure: 75rem;
+  --gutter: clamp(1.25rem, 4vw, 2rem);
+
+  --radius-card: 1.25rem;
+  --radius-button: 999px;
+  --radius-image: 1.5rem;
+
+  --border-hairline: 1px solid var(--color-gold-foil);
+  --border-card: 1.5px solid var(--color-ube-mochi);
+  --shadow-card: 0 6px 24px rgba(74, 35, 112, 0.08);
+
+  /* Wordmark swap: replace the files in /assets/img/brand/ or point these at another option. */
+  --logo-header: url("../img/brand/wordmark-primary-phori-o-leaf.png");
+  --logo-header-on-dark: url("../img/brand/wordmark-primary-reversed-cream.png");
+  --logo-footer: url("../img/brand/wordmark-alternate-lockup-deep.png");
+  --logo-footer-on-dark: url("../img/brand/wordmark-alternate-lockup-cream.png");
+
+  --focus-ring: 2px solid var(--color-deep-ube);
+  --focus-offset: 3px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  color-scheme: light;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--color-deep-ube);
+  background-color: var(--color-coconut-cream);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+a {
+  color: var(--color-deep-ube);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--color-button-hover);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
+h1,
+h2,
+h3,
+.pull-quote,
+.tagline-band__text {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-variation-settings: "SOFT" 100, "WONK" 0;
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--text-h1);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+  line-height: 1.25;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
