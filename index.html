@@ -25,7 +25,7 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<p class="site-banner">Internal mockup, not for distribution.</p>
+<p class="site-banner">Concept preview. Company in registration. Not an offer.</p>
 
 <header class="site-header">
   <div class="wrap site-header__inner">
@@ -108,7 +108,7 @@
               <feComposite in="grained" in2="SourceGraphic" operator="in"/>
             </filter>
           </defs>
-          <!-- Single soft cone of matte powder, with a simple wooden scoop resting against it -->
+          <!-- Single soft cone of matte powder, with a short wooden kitchen scoop angled into it -->
           <g transform="translate(4 128) scale(1.16)">
             <ellipse cx="128" cy="176" rx="86" ry="13" fill="#4a2370" opacity="0.08"/>
             <!-- Soft single-peak cone (no lobes, no gloss) -->
@@ -124,14 +124,30 @@
               C170 92 196 128 200 158
               C192 172 164 180 128 180
               C92 180 66 172 58 158 Z"/>
-            <!-- Wooden scoop, bowl against the lower left of the heap, handle down and left -->
-            <g transform="translate(18 118) rotate(-38)">
-              <rect x="20" y="22" width="16" height="92" rx="7" fill="url(#wood)" stroke="#6e4a28" stroke-width="1.1"/>
-              <path d="M22 26h12" stroke="#8a6234" stroke-width="0.7" opacity="0.55"/>
-              <path d="M22 48h12" stroke="#8a6234" stroke-width="0.55" opacity="0.4"/>
-              <path d="M22 72h12" stroke="#8a6234" stroke-width="0.55" opacity="0.4"/>
-              <ellipse cx="28" cy="10" rx="26" ry="16" fill="url(#wood)" stroke="#6e4a28" stroke-width="1.1"/>
-              <ellipse cx="28" cy="11" rx="18" ry="10" fill="url(#wood-dark)" opacity="0.45"/>
+            <!-- Kitchen scoop: deep rounded bowl, mouth facing up, short handle, a little powder inside -->
+            <g transform="translate(92 132) rotate(-30)">
+              <!-- Short handle, rounded butt, flowing into the bowl neck -->
+              <path fill="url(#wood)" stroke="#6e4a28" stroke-width="1.15" stroke-linejoin="round" d="
+                M-22 0
+                L-60 16
+                C-70 20 -72 34 -60 38
+                L-20 22
+                C-14 18 -14 6 -22 0 Z"/>
+              <path d="M-28 8 L-58 22" stroke="#8a6234" stroke-width="0.7" opacity="0.5" fill="none"/>
+              <path d="M-26 14 L-54 26" stroke="#8a6234" stroke-width="0.45" opacity="0.35" fill="none"/>
+              <!-- Deep rounded bowl, one silhouette, tucked into the heap -->
+              <path fill="url(#wood)" stroke="#6e4a28" stroke-width="1.15" stroke-linejoin="round" d="
+                M-30 6
+                C-36 22 -24 46 2 52
+                C28 46 38 22 30 4
+                C20 -10 -18 -8 -30 6 Z"/>
+              <!-- Mouth facing up: oval opening we look into -->
+              <ellipse cx="0" cy="2" rx="28" ry="13" fill="url(#wood)" stroke="#6e4a28" stroke-width="1.2"/>
+              <ellipse cx="0" cy="3.2" rx="22.5" ry="9.6" fill="url(#wood-dark)"/>
+              <!-- A little ube powder in the bowl, slightly heaped -->
+              <ellipse cx="0" cy="4.2" rx="20" ry="7.6" fill="url(#powder-matte)" filter="url(#powder-grain)"/>
+              <path filter="url(#powder-grain)" fill="#6a3d8f" d="M-14 4.5 C-8 -2 8 -2 14 4.5 C8 9 -8 9 -14 4.5 Z"/>
+              <ellipse cx="0" cy="2" rx="28" ry="13" fill="none" stroke="#e8d3a8" stroke-width="0.75" opacity="0.55"/>
             </g>
             <!-- Loose matte crumbs -->
             <ellipse cx="52" cy="168" rx="3.2" ry="2.2" fill="#4a2370" opacity="0.6" transform="rotate(-16 52 168)"/>
@@ -219,7 +235,7 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <p class="site-footer__note">Concept preview · Working name, concept logos · Company in registration · Not an offer.</p>
-    <p class="site-footer__legal">© <span class="placeholder">[Year]</span> <span class="placeholder">[Legal entity name – SEC registration pending]</span>.</p>
+    <p class="site-footer__legal">© 2026 <span class="placeholder">[Legal entity name – SEC registration pending]</span>.</p>
   </div>
 </footer>
 
