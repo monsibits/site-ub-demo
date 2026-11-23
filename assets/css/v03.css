@@ -909,6 +909,9 @@
 .hero__still {
   position: relative;
   z-index: 1;
+  padding-bottom: 1.5rem;
+  /* Reserve room so Phori can sit beside the pouch without leaving the viewport. */
+  margin-right: 3.25rem;
 }
 
 .hero__scene {
@@ -922,8 +925,8 @@
 
 .hero__phori {
   position: absolute;
-  right: 0;
-  bottom: 2%;
+  right: -2.85rem;
+  bottom: 0;
   z-index: 2;
   width: auto;
   max-width: none;
@@ -933,9 +936,14 @@
 }
 
 @media (min-width: 64rem) {
+  .hero__still {
+    margin-right: 5rem;
+  }
+
   .hero__phori {
     width: auto;
     max-width: none;
+    right: -4.25rem;
   }
 }
 
