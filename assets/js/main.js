@@ -39,6 +39,65 @@
     tIO.observe(ticker);
   }
 
+  var langRoots = Array.prototype.slice.call(document.querySelectorAll("[data-lang-switch]"));
+  if (langRoots.length) {
+    function langLinks(root) {
+      return Array.prototype.slice.call(root.querySelectorAll(".lang-switch__list a"));
+    }
+    function syncExpanded(root) {
+      var summary = root.querySelector("summary");
+      if (summary) summary.setAttribute("aria-expanded", root.open ? "true" : "false");
+    }
+    langRoots.forEach(function (root) {
+      syncExpanded(root);
+      root.addEventListener("toggle", function () { syncExpanded(root); });
+      root.addEventListener("keydown", function (event) {
+        var summary = root.querySelector("summary");
+        var links = langLinks(root);
+        var current = document.activeElement;
+        var index = links.indexOf(current);
+        if (event.key === "Escape" && root.open) {
+          event.preventDefault();
+          root.removeAttribute("open");
+          if (summary) summary.focus();
+          return;
+        }
+        if (!root.open && (event.key === "ArrowDown" || event.key === "ArrowUp") && current === summary) {
+          event.preventDefault();
+          root.setAttribute("open", "");
+          if (links.length) links[event.key === "ArrowDown" ? 0 : links.length - 1].focus();
+          return;
+        }
+        if (!root.open || !links.length) return;
+        if (event.key === "Home") {
+          event.preventDefault();
+          links[0].focus();
+        } else if (event.key === "End") {
+          event.preventDefault();
+          links[links.length - 1].focus();
+        } else if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+          event.preventDefault();
+          if (index < 0) {
+            links[event.key === "ArrowDown" ? 0 : links.length - 1].focus();
+            return;
+          }
+          if (event.key === "ArrowDown") links[(index + 1) % links.length].focus();
+          else links[(index - 1 + links.length) % links.length].focus();
+        }
+      });
+    });
+    document.addEventListener("click", function (event) {
+      langRoots.forEach(function (root) {
+        if (root.open && !root.contains(event.target)) root.removeAttribute("open");
+      });
+    });
+    document.addEventListener("focusin", function (event) {
+      langRoots.forEach(function (root) {
+        if (root.open && !root.contains(event.target)) root.removeAttribute("open");
+      });
+    });
+  }
+
   var sticky = document.querySelector("[data-sticky-cta]");
   if (!sticky) return;
   if (sessionStorage.getItem("ub-sticky-hide") === "1") return;

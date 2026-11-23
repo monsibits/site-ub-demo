@@ -2,4 +2,4 @@
 
 Static pages for a concept preview. Every page is marked `noindex, nofollow`, and `robots.txt` disallows all crawlers. Do not add a custom domain.
 
-See `CREDITS.md` for the map data source.
+See `CREDITS.md` for photograph credits.
